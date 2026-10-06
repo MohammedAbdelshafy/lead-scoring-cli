@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lead-scoring-cli"
+version = "0.1.0"
+description = "Transparent weighted lead scoring (0-100 + Platinum/Gold/Silver/Bronze) and seller-to-buyer matching CLI. Dependency-free."
+authors = [{name = "Mohammed Abdelshafy"}]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+lead-score = "lead_scoring.engine:main"
+
+[tool.setuptools.packages.find]
+include = ["lead_scoring*"]
