@@ -82,6 +82,12 @@ def test_unknown_property_data_never_earns_distress_points():
     assert missing["property_missing_signals"]
 
 
+def test_high_equity_boolean_and_percent_units():
+    assert "high_equity" in score_property_row({"high_equity": "yes"})["property_signals"]
+    assert "high_equity" not in score_property_row({"equity_pct": "0.8%"})["property_signals"]
+    assert "high_equity" in score_property_row({"equity_pct": "0.8"})["property_signals"]
+
+
 def test_unverified_contact_does_not_get_contact_points():
     row = {"tax_delinquent": "yes", "phone": "+1 713 555 0101", "email": "owner@example.com"}
     scored = score_property_row(row)
