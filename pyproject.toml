@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lead-scoring-cli"
-version = "0.1.0"
-description = "Transparent weighted lead scoring (0-100 + Platinum/Gold/Silver/Bronze) and seller-to-buyer matching CLI. Dependency-free."
+version = "0.2.0"
+description = "Transparent lead scoring with property-level seller research scoring and seller-to-buyer matching."
 authors = [{name = "Mohammed Abdelshafy"}]
 readme = "README.md"
 requires-python = ">=3.9"
