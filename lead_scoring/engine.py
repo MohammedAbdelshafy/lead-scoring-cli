@@ -92,11 +92,19 @@ def score_property_row(r):
             years = _f(raw, -1)
             active = years >= 10 if years >= 0 else None
         elif signal == "high_equity" and raw != "":
-            pct = _f(str(raw).strip().replace("%", ""), -1)
-            if pct >= 0:
-                if pct <= 1:
-                    pct *= 100
-                active = pct >= 70
+            raw_equity = str(raw).strip().lower()
+            if raw_equity in _TRUE:
+                active = True
+            elif raw_equity in _FALSE:
+                active = False
+            else:
+                has_percent = raw_equity.endswith("%")
+                pct = _f(raw_equity.replace("%", ""), -1)
+                if pct >= 0:
+                    # Explicit percent strings stay percentages; bare 0-1 numbers are ratios.
+                    if not has_percent and pct <= 1:
+                        pct *= 100
+                    active = pct >= 70
         elif signal == "valid_phone":
             active = _verified_phone(r)
         elif signal == "valid_email":
