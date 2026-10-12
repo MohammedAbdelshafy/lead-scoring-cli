@@ -13,16 +13,16 @@ pip install lead-scoring-cli
 ## Usage
 
 \`\`\`bash
-# Existing generic/business lead score, preserved for compatibility
+# Existing generic/business lead score (unchanged)
 lead-score score leads.csv --out scored.csv
 
-# NEW: property distress/equity/contact research score
+# Property distress/equity/contact research score
 lead-score property-score properties.csv --out property-ranked.csv
 
 # Daily generic lead report
 lead-score report buyers.csv
 
-# Match sellers to relevant buyers by market
+# Match sellers to the best buyers by market + type
 lead-score match sellers.csv buyers.csv --out matches.csv
 \`\`\`
 
@@ -45,7 +45,7 @@ The property scorer awards points only for explicit affirmative evidence. Missin
 | Verified phone | 3 | Plausible phone format plus provider status marked verified/valid |
 | Verified email | 2 | Valid email syntax plus provider status marked verified/valid |
 
-The maximum score is 100. Grades use Platinum ≥85, Gold ≥70, Silver ≥55, otherwise Bronze. This initial rubric is rule-based and **not statistically calibrated**. It must be evaluated against actual conversation, offer and contract outcomes before being described as predictive.
+The maximum score is 100. Grades use Platinum ≥85, Gold ≥70, Silver ≥55, otherwise Bronze. This initial rubric is rule-based and **not statistically calibrated**. Evaluate against actual conversation, offer and contract outcomes before describing it as predictive.
 
 ## Output fields
 
@@ -60,7 +60,7 @@ The maximum score is 100. Grades use Platinum ≥85, Gold ≥70, Silver ≥55, o
 
 ## Existing generic rubric
 
-The generic \`score\` command remains for compatibility. It uses intent (0.40), confidence (0.30), channel presence (0.15) and email quality (0.15). It is suitable as a simple ranker, not as a real-estate distress model.
+The generic \`score\` command remains unchanged for compatibility. It uses intent (0.40), confidence (0.30), channel presence (0.15) and email-field quality (0.15). It is a simple ranker, not a real-estate distress model.
 
 ## What it does not do
 
@@ -68,7 +68,7 @@ The generic \`score\` command remains for compatibility. It uses intent (0.40), 
 - No live property-data feed, skip tracing, ownership lookup or comparable-sale verification.
 - No automatic outreach or suppression decision.
 - No commitment of owner-level records to GitHub.
-- Property comparables, tax/legal status and contact verification remain the operator's responsibility.
+- Property comps, tax/legal status and contact verification remain operator responsibilities.
 
 ## License
 
