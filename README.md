@@ -1,6 +1,7 @@
 # Lead Priority Check
 
-A small command-line tool that ranks the property leads you already have and matches seller opportunities to buyer criteria. The scoring rules are visible and configurable; the tool does not find buyers or guarantee conversions.
+A clear, rules-based tool for ranking the real-estate leads you already have and matching seller records to buyer criteria. The scoring rubric is visible and configurable.
+It ranks supplied records. It does not find buyers, verify every underlying fact, or promise conversions.
 
 Customer-facing name: **Lead Priority Check**. The repository, package and command identifiers remain unchanged.
 
