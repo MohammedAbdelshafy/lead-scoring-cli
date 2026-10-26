@@ -1,7 +1,8 @@
-# Lead Scoring CLI
+# Lead Priority Check
 
-Transparent, dependency-free lead scoring + seller→buyer matching for real-estate
-wholesalers and agencies. No black box: the rubric is config, not hardcoded logic.
+A small command-line tool that ranks the property leads you already have and matches seller opportunities to buyer criteria. The scoring rules are visible and configurable; the tool does not find buyers or guarantee conversions.
+
+Customer-facing name: **Lead Priority Check**. The repository, package and command identifiers remain unchanged.
 
 ## Install
 
