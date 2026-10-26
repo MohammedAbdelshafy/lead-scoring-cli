@@ -1,4 +1,4 @@
-# Lead Priority Check
+# Lead Scoring CLI
 
 - Commands and rubric: [README.md](README.md)
 - Implementation: [lead_scoring](lead_scoring/)
