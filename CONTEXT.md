@@ -2,11 +2,11 @@
 type: repository
 status: active
 owner_repo: MohammedAbdelshafy/lead-scoring-cli
-product_name: Lead Priority Check
+product_name: Lead Scoring CLI
 source_of_truth: https://github.com/MohammedAbdelshafy/lead-scoring-cli
 ---
 
-# Lead Priority Check CONTEXT
+# Lead Scoring CLI CONTEXT
 
 One job: help a person sort supplied leads using a visible scoring rule and identify possible seller-to-buyer matches.
 
