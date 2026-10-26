@@ -1,4 +1,4 @@
-# Lead Priority Check
+# Lead Scoring CLI
 
 A clear, rules-based tool for ranking the real-estate leads you already have and matching seller records to buyer criteria. The scoring rubric is visible and configurable.
 It ranks supplied records. It does not find buyers, verify every underlying fact, or promise conversions.
