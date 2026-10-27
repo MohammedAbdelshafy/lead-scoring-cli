@@ -3,7 +3,7 @@
 A clear, rules-based tool for ranking the real-estate leads you already have and matching seller records to buyer criteria. The scoring rubric is visible and configurable.
 It ranks supplied records. It does not find buyers, verify every underlying fact, or promise conversions.
 
-Customer-facing name: **Lead Priority Check**. The repository, package and command identifiers remain unchanged.
+
 
 ## Install
 
